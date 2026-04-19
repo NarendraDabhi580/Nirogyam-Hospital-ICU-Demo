@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Shield, Clock, Star } from 'lucide-react';
 
 const stats = [
@@ -7,7 +7,7 @@ const stats = [
   { icon: Star, value: '16-Bed', label: 'General Ward' },
 ];
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,
