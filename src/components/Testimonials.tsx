@@ -4,42 +4,34 @@ import { Star, ChevronLeft, ChevronRight, Quote, MapPin } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Ramesh Patel',
+    name: 'M.R PATEL',
     location: 'Ahmedabad',
-    role: 'Knee Replacement Patient',
+    role: 'Gallbladder Surgery Patient',
     rating: 5,
-    text: 'Dr. Shah performed my total knee replacement with exceptional skill. Within 3 months I was walking without pain for the first time in years. The entire team was warm, professional, and attentive throughout my stay.',
-    initials: 'RP',
+    text: 'I had an incredibly positive experience at Nirogyam. Thanks to Dr. Amol Mehta\'s accurate diagnosis, it was confirmed my wife had multiple stones in her gallbladder. Incredibly, she was able to walk within just 2 hours of the procedure! Highly recommend this hospital.',
+    initials: 'MP',
     color: 'bg-blue-100 text-blue-700',
   },
   {
-    name: 'Kavita Mehta',
-    location: 'Surat',
-    role: 'General Surgery Patient',
+    name: 'Shaiju Thankachan',
+    location: 'Ahmedabad',
+    role: 'Patient',
     rating: 5,
-    text: 'I was nervous about my laparoscopic surgery but the staff at Nirogyam made me feel completely at ease. The ICU care post-surgery was outstanding. Highly recommend this hospital for anyone in Gujarat.',
-    initials: 'KM',
+    text: 'Best hospital experience in Ahmedabad! Nirogyam stands out for its exceptional medical care and compassionate staff. Under the expert leadership of Dr. Divyang Dalwadi, every patient receives focused treatment. A truly well-managed hospital with a human touch.',
+    initials: 'ST',
     color: 'bg-slate-100 text-slate-700',
   },
   {
-    name: 'Ajay Solanki',
-    location: 'Gandhinagar',
-    role: 'Dialysis Patient',
+    name: 'Suresh Prajapati',
+    location: 'Ahmedabad',
+    role: 'Sinus Surgery Patient',
     rating: 5,
-    text: 'Been coming for dialysis sessions for over a year. The staff is consistent, caring, and the facility is immaculate. They treat each patient like family. It is the best dialysis center in the region.',
-    initials: 'AS',
+    text: 'I recently underwent pilonidal sinus surgery with Dr. Amol Mehta. The surgery was performed smoothly, and I was discharged within 24 hours. I truly appreciate the professionalism, skill, and compassion shown by the doctor and his team.',
+    initials: 'SP',
     color: 'bg-blue-100 text-blue-700',
-  },
-  {
-    name: 'Priya Joshi',
-    location: 'Vadodara',
-    role: 'Urology Patient',
-    rating: 5,
-    text: 'Had my kidney stone procedure at Nirogyam. Same day procedure, minimal pain, and was home the next morning. The doctor explained everything beforehand. Truly a world-class experience.',
-    initials: 'PJ',
-    color: 'bg-slate-100 text-slate-700',
   },
 ];
+
 
 export default function Testimonials() {
   const [active, setActive] = useState(0);
@@ -166,7 +158,7 @@ export default function Testimonials() {
                     </div>
                     <div>
                       <p className="text-white font-bold text-lg">Nirogyam Hospital</p>
-                      <p className="text-slate-400 text-sm mt-1">Makarba, Ahmedabad, Gujarat — 380051</p>
+                      <p className="text-slate-400 text-sm mt-1 leading-snug px-2">besides, nirgun one, Orchid Exotica, 201-204, underpass, near makarba, Makarba, Ahmedabad, Gujarat 380051</p>
                     </div>
                     <a
                       href="https://maps.google.com/?q=Makarba+Ahmedabad"

@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Heart, Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const navLinks = [
   { label: 'Services', href: '#specialties' },
   { label: 'About', href: '#facilities' },
+  { label: 'Doctors', href: '#doctors' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -21,8 +22,14 @@ export default function Navbar() {
 
   const handleNavClick = (href: string) => {
     setMenuOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      const el = document.querySelector(href);
+      if (el) {
+        const offset = 80; // height of the fixed navbar
+        const y = el.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   return (
@@ -38,14 +45,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-200 group-hover:scale-105 transition-transform duration-200">
-              <Heart className="w-5 h-5 text-white fill-white" />
-            </div>
-            <div>
-              <p className="text-[13px] font-bold text-slate-900 leading-tight tracking-tight">NIROGYAM</p>
-              <p className="text-[10px] text-slate-500 leading-tight tracking-wide uppercase">ICU & Multispeciality</p>
-            </div>
+          <a href="#" className="flex items-center group">
+            <img src="/logo.png" alt="Nirogyam Logo" className="h-10 md:h-12 w-auto group-hover:scale-105 transition-transform duration-200" />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -62,7 +63,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
             <a
-              href="tel:+911234567890"
+              href="tel:+919904628373"
               className="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-blue-200"
             >
               <Phone className="w-4 h-4" />
@@ -98,7 +99,7 @@ export default function Navbar() {
                 </button>
               ))}
               <a
-                href="tel:+911234567890"
+                href="tel:+919904628373"
                 className="flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-4 py-3 rounded-xl mt-2 justify-center"
               >
                 <Phone className="w-4 h-4" />

@@ -1,4 +1,4 @@
-import { Heart, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
 
 const links = {
   Services: ['General Surgery', 'Orthopedics', 'Urology', 'Dialysis', 'Emergency'],
@@ -12,28 +12,24 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
           <div className="col-span-2 lg:col-span-2 flex flex-col gap-5">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center">
-                <Heart className="w-5 h-5 text-white fill-white" />
-              </div>
-              <div>
-                <p className="text-sm font-bold leading-tight">NIROGYAM</p>
-                <p className="text-[10px] text-slate-500 tracking-wide uppercase">ICU & Multispeciality Hospital</p>
+            <div className="flex items-center">
+              <div className="bg-white px-3 py-2 rounded-xl inline-block shadow-sm">
+                <img src="/logo.png" alt="Nirogyam Logo" className="h-10 md:h-12 w-auto" />
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               Delivering precision surgical care and compassionate healing to patients across Gujarat since 2014.
             </p>
             <div className="flex flex-col gap-3 text-sm text-slate-400">
-              <a href="tel:+911234567890" className="flex items-center gap-2.5 hover:text-white transition-colors">
-                <Phone className="w-4 h-4 text-blue-500" /> +91 98765 43210
+              <a href="tel:+919904628373" className="flex items-center gap-2.5 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 text-blue-500" /> +91 9904628373
               </a>
               <a href="mailto:info@nirogyam.in" className="flex items-center gap-2.5 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-blue-500" /> info@nirogyam.in
               </a>
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
-                <span>Makarba, Ahmedabad, Gujarat — 380051</span>
+                <span className="leading-tight">besides, nirgun one, Orchid Exotica, 201-204, underpass, near makarba, Makarba, Ahmedabad, Gujarat 380051</span>
               </div>
             </div>
             <div className="flex items-center gap-3 pt-1">

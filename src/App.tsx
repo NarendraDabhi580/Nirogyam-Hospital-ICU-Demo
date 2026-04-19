@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Specialties from './components/Specialties';
 import Facilities from './components/Facilities';
+import Doctors from './components/Doctors';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Specialties />
         <Facilities />
+        <Doctors />
         <Testimonials />
         <Contact />
       </main>

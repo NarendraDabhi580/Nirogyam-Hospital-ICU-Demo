@@ -86,9 +86,9 @@ export default function Contact() {
 
             <div className="flex flex-col gap-5">
               {[
-                { icon: Phone, label: 'Emergency Hotline', value: '+91 98765 43210', sub: 'Available 24/7' },
-                { icon: Calendar, label: 'OPD Timings', value: 'Mon – Sat, 9 AM – 7 PM', sub: 'Walk-ins welcome' },
-                { icon: Stethoscope, label: 'Location', value: 'Makarba, Ahmedabad', sub: 'Gujarat — 380051' },
+                { icon: Phone, label: 'Emergency Hotline', value: '+91 9904628373', sub: 'Available 24/7' },
+                { icon: Calendar, label: 'OPD Timings', value: 'Open 24 hours', sub: 'Walk-ins welcome' },
+                { icon: Stethoscope, label: 'Location', value: 'besides, nirgun one, Orchid Exotica,', sub: '201-204, underpass, near makarba, Ahmedabad, Gujarat 380051' },
               ].map(({ icon: Icon, label, value, sub }) => (
                 <div key={label} className="flex items-center gap-4">
                   <div className="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center shrink-0">
@@ -165,7 +165,7 @@ export default function Contact() {
                     </label>
                     <input
                       type="tel"
-                      placeholder="98765 43210"
+                      placeholder="9904628373"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       className={inputClass('phone')}

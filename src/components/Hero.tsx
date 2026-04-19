@@ -45,7 +45,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold px-4 py-2 rounded-full w-fit"
             >
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-              Makarba, Ahmedabad — Accepting Patients
+              Makarba, Ahmedabad, Gujarat 380051 — Accepting Patients
             </motion.div>
 
             <div className="flex flex-col gap-4">
